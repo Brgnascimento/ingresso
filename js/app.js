@@ -2,14 +2,18 @@ function comprar(){
     let tipo = document.getElementById('tipo-ingresso');
     let qtd = parseInt(document.getElementById('qtd').value);
 
-    if (tipo.value =='pista'){
-        comprarPista(qtd)} else {
-            if (tipo.value == 'inferior'){
-                comprarInferior(qtd)
-            } else {
-                comprarSuperior(qtd)
-            }
+    if (qtd = 0){
+        alert('Ops, você não colocou a quantidade!')
+    } else {
+        if (tipo.value =='pista'){
+            comprarPista(qtd)} else {
+                if (tipo.value == 'inferior'){
+                    comprarInferior(qtd)
+                } else {
+                    comprarSuperior(qtd)
+                }
         }
+    }
   
 }
 
