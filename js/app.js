@@ -2,7 +2,7 @@ function comprar(){
     let tipo = document.getElementById('tipo-ingresso');
     let qtd = parseInt(document.getElementById('qtd').value);
 
-    if (qtd = 0){
+    if (document.getElementById('qtd').value == ''){
         alert('Ops, você não colocou a quantidade!')
     } else {
         if (tipo.value =='pista'){
